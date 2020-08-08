@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from './components/header.jsx'
+import Hero from './components/hero.jsx';
 
 const App = () => (
-  <Header />
+  <Fragment>
+    <Header />
+    <Hero />
+  </Fragment>
 );
 
 export default App;
