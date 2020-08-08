@@ -1,0 +1,71 @@
+:root {
+  /*Texto*/
+  --fontTitle: 'Arial';
+  --fontText: 'Arial';
+
+  /*Espacing*/
+  --spacingx1: 10px;
+  --spacingx2: 20px;
+  --spacingx3: 30px;
+
+  /*Colors*/
+  --principal: #433431;
+  --secundary: #FF6400;
+  --secundaryClear: #FE8600;
+  --clear: #A19B9D;
+  --darkClear: #6C6C6B;
+  --dark: #000000;
+  --white: #ffffff;
+
+  /*Text size*/
+  --titleSize: 1.5em;
+  --textSize: 1em;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-family: var(--fontTitle);
+  font-size: var(--titleSize);
+}
+
+p {
+  font-family: var(--fontText);
+  font-size: var(--textSize);
+}
+
+a {
+  font-family: var(--fontText);
+  font-size: var(--textSize);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: var(--spacingx1);
+  background-color: var(--principal);
+  font-weight: 600;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--secundary);
+}
+
+.button-buy {
+  height: 30px;
+  padding: var(--spacingx1);
+  background-color: var(--secundaryClear);
+  font-weight: 600;
+  color: var(--white);
+}
