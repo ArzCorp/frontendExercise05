@@ -38,6 +38,11 @@ h1 {
   font-size: var(--titleSize);
 }
 
+h2 {
+  font-family: var(--fontText);
+  font-size: var(--titleSize);
+}
+
 p {
   font-family: var(--fontText);
   font-size: var(--textSize);
@@ -76,9 +81,18 @@ a {
 }
 
 .button-buy {
+  display: flex;
+  align-items: center;
+  width: 100px;
   height: 30px;
-  padding: var(--spacingx1);
+  padding: var(--spacingx1) var(--spacingx2);
   background-color: var(--secundaryClear);
   font-weight: 600;
   color: var(--white);
+  border: transparent;
+}
+
+.button-buy:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }

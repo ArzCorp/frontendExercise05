@@ -1,47 +1,58 @@
 .bestseller {
   display: flex;
-  justify-content: space-between;
-  background-color: var(--whiteDark);
+  margin: var(--spacingx3);
+  justify-content: space-around;
+  background-color: #FAF7F2;
 }
 
-.bestseller h1 {
-  padding-top: var(--spacingx3);
-  color: var(--secundary);
+.bestseller__categories {
+  width: 40%;
 }
 
 .bestseller__articles {
-  width: 70%;
-  padding: var(--spacingx3) 0px;
-}
-
-.articles {
-  display: flex;
-  margin-top: var(--spacingx3);
-}
-
-.article {
-  display: block;
-  text-align: left;
-  width: 150px;
-  margin-right: var(--spacingx3);
-}
-
-.article__image {
   width: 100%;
-  height: 80%;
-  margin-bottom: var(--spacingx2);
+  margin-left: var(--spacingx3);
 }
 
-.article p {
+.bestseller__articles h1 {
+  padding-bottom: var(--spacingx3);
+  color: var(--secundary);
+}
+
+.bestseller__articles input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: var(--spacingx1);
+}
+
+.articles-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-card {
+  width: 200px;
+  height: 250px;
+  margin-right: var(--spacingx3);
+  margin-bottom: var(--spacingx3);
+  padding: var(--spacingx1);
+  border: 1px solid var(--clear);
+}
+
+.article-card p {
+  margin-bottom: var(--spacingx1);
   font-weight: 600;
 }
 
-.bestseller__brands {
-  width: 30%;
-  padding: var(--spacingx3) 0px;
+.article-card__image {
+  width: 100%;
+  height: 60%;
 }
 
-.brands__image {
-  height: 150px;
-  margin-top: var(--spacingx3);
+.article-card__buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacingx3);
+  font-weight: 600;
 }

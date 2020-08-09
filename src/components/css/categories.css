@@ -1,0 +1,18 @@
+.categories {
+  width: 100%;
+}
+
+.categories h1 {
+  padding-bottom: var(--spacingx3);
+  color: var(--secundary)
+}
+
+.categories a {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: var(--spacingx1);
+  border: 1px solid var(--clear);
+  font-weight: 600;
+  color: var(--dark);
+}
