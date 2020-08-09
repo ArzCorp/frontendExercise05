@@ -4,6 +4,7 @@ import Hero from './components/hero.jsx';
 import Menu from './components/menu.jsx';
 import Featured from './components/featured.jsx';
 import BestSeller from './components/bestSeller.jsx';
+import Footer from './components/footer.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -94,6 +95,7 @@ class App extends Component {
         <Menu />
         <Featured props={this.state} />
         <BestSeller props={this.state} />
+        <Footer />
       </Fragment>
     )
   }
