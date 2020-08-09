@@ -1,0 +1,47 @@
+.bestseller {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--whiteDark);
+}
+
+.bestseller h1 {
+  padding-top: var(--spacingx3);
+  color: var(--secundary);
+}
+
+.bestseller__articles {
+  width: 70%;
+  padding: var(--spacingx3) 0px;
+}
+
+.articles {
+  display: flex;
+  margin-top: var(--spacingx3);
+}
+
+.article {
+  display: block;
+  text-align: left;
+  width: 150px;
+  margin-right: var(--spacingx3);
+}
+
+.article__image {
+  width: 100%;
+  height: 80%;
+  margin-bottom: var(--spacingx2);
+}
+
+.article p {
+  font-weight: 600;
+}
+
+.bestseller__brands {
+  width: 30%;
+  padding: var(--spacingx3) 0px;
+}
+
+.brands__image {
+  height: 150px;
+  margin-top: var(--spacingx3);
+}

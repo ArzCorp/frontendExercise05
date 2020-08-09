@@ -1,0 +1,6 @@
+.menu {
+  display: flex;
+  width: 100%;
+  border-bottom: 5px solid var(--secundary);
+  background-color: var(--principal);
+}

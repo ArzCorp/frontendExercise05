@@ -9,13 +9,13 @@ const DotNav = () => {
 
   return (
     <div className="dotnav">
-      <i class="fas fa-circle icon" onClick={nextImage}></i>
-      <i class="fas fa-circle icon" onClick={nextImage}></i>
-      <i class="fas fa-circle icon" onClick={nextImage}></i>
-      <i class="fas fa-circle icon" onClick={nextImage}></i>
-      <i class="fas fa-circle icon" onClick={nextImage}></i>
-      <i class="fas fa-circle icon" onClick={nextImage}></i>
-      <i class="fas fa-circle icon" onClick={nextImage}></i>
+      <i className="fas fa-circle icon" onClick={nextImage}></i>
+      <i className="fas fa-circle icon" onClick={nextImage}></i>
+      <i className="fas fa-circle icon" onClick={nextImage}></i>
+      <i className="fas fa-circle icon" onClick={nextImage}></i>
+      <i className="fas fa-circle icon" onClick={nextImage}></i>
+      <i className="fas fa-circle icon" onClick={nextImage}></i>
+      <i className="fas fa-circle icon" onClick={nextImage}></i>
     </div>
   )
 };

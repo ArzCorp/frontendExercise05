@@ -16,6 +16,7 @@
   --darkClear: #6C6C6B;
   --dark: #000000;
   --white: #ffffff;
+  --whiteDark: #E9E6E1;
 
   /*Text size*/
   --titleSize: 1.5em;
@@ -45,21 +46,33 @@ p {
 a {
   font-family: var(--fontText);
   font-size: var(--textSize);
+  text-decoration: none;
+}
+
+.container {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  width: 1024px;
+  margin: 0px auto;
 }
 
 .button {
   display: flex;
   align-items: center;
   height: 100%;
-  padding: var(--spacingx1);
+  padding: var(--spacingx1) var(--spacingx2);
   background-color: var(--principal);
   font-weight: 600;
   color: var(--white);
   cursor: pointer;
+  border-left: 1px solid var(--dark);
+  border-right: 1px solid var(--dark);
 }
 
 .button:hover {
   background-color: var(--secundary);
+  border: transparent
 }
 
 .button-buy {
