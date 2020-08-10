@@ -7,6 +7,14 @@
     "test": "jest",
     "development": "webpack-dev-server"
   },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/__test__/setupTest.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(styl|css)$": "<rootDir>/src/__mocks__/styleMock.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/ArzateCompany/frontendExercise05.git"
@@ -27,8 +35,11 @@
     "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
+    "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
     "html-webpack-plugin": "^4.3.0",
     "mini-css-extract-plugin": "^0.9.0",
     "style-loader": "^1.2.1",
@@ -38,6 +49,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
+    "jest": "^26.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

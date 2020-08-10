@@ -85,8 +85,9 @@ class App extends Component {
         },
       ],
       count: 0,
-    }
-  }
+    };
+  };
+
   render() {
     return (
       <Fragment>
@@ -97,8 +98,8 @@ class App extends Component {
         <BestSeller props={this.state} />
         <Footer />
       </Fragment>
-    )
-  }
+    );
+  };
 };
 
 export default App;
