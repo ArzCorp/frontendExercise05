@@ -1,6 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './css/bestSeller.css';
 import Categories from './categories.jsx';
+import PagesNav from './pagesNav.jsx';
 
 const BestSeller = (props) => {
 
@@ -30,6 +31,7 @@ const BestSeller = (props) => {
           <div className="articles-cards">
             {putArticles}
           </div>
+          <PagesNav />
         </div>
       </div>
     </section>

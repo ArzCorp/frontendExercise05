@@ -96,3 +96,18 @@ a {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+.button-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacingx1);
+  margin-right: var(--spacingx2);
+  border: 1px solid var(--darkClear);
+  font-weight: 600;
+}
+
+.button-pages:hover {
+  background-color: var(--secundary);
+  border: transparent
+}
