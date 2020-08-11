@@ -4,7 +4,6 @@ import './css/menu.css';
 const Menu = (props) => {
 
   const handleChange = props.props.f
-  console.log(props.props.f)
 
   return (
     <section className="menu">

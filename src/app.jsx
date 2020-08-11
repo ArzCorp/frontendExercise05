@@ -22,7 +22,8 @@ class App extends Component {
           element[i].classList.remove('changecolor')
         }
       }
-      alert('Hola')
+      alert('Id: ${id} , Count: ${count}')
+      console.log('I’m not propagating')
     };
 
     this.state = {
