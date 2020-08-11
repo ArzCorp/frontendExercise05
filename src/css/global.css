@@ -73,6 +73,8 @@ a {
   cursor: pointer;
   border-left: 1px solid var(--dark);
   border-right: 1px solid var(--dark);
+  border-top: 0px;
+  border-bottom: 0px;
 }
 
 .button:hover {
@@ -110,4 +112,12 @@ a {
 .button-pages:hover {
   background-color: var(--secundary);
   border: transparent
+}
+
+.changecolor {
+  background-color: #FF6400;
+}
+
+.changecolor:hover {
+  background-color: var(--principal);
 }

@@ -6,7 +6,6 @@ import PagesNav from './pagesNav.jsx';
 const BestSeller = (props) => {
 
   const articles = props.props.data
-  console.log(articles)
   const putArticles = articles.map((article) => {
     return (
       <div className="article-card" key={article.id}>

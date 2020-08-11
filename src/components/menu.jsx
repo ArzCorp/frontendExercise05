@@ -1,18 +1,24 @@
 import React from 'react';
 import './css/menu.css';
 
-const Menu = () => (
-  <section className="menu">
-    <div className="container">
-      <a className="button" href="/">Inicio</a>
-      <a className="button" href="/">Carretera</a>
-      <a className="button" href="/">Ciudad</a>
-      <a className="button" href="/">Of road</a>
-      <a className="button" href="/">Traid</a>
-      <a className="button" href="/">Casual</a>
-      <a className="button" href="/">Accesorios</a>
-    </div>
-  </section>
-);
+const Menu = (props) => {
+
+  const handleChange = props.props.f
+  console.log(props.props.f)
+
+  return (
+    <section className="menu">
+      <div className="container">
+        <a className="button" onClick={handleChange}>Inicio</a>
+        <a className="button" onClick={handleChange}>Carretera</a>
+        <a className="button" onClick={handleChange}>Ciudad</a>
+        <a className="button" onClick={handleChange}>Of road</a>
+        <a className="button" onClick={handleChange}>Traid</a>
+        <a className="button" onClick={handleChange}>Casual</a>
+        <a className="button" onClick={handleChange}>Accesorios</a>
+      </div>
+    </section>
+  );
+};
 
 export default Menu;

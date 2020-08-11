@@ -1,17 +1,15 @@
 import React from 'react';
 import './css/navbar.css'
 
-const Navbar = () => {
+const Navbar = (props) => {
 
-  const count = () => {
-    alert('hola');
-  }
+  const handleChange = props.props
 
   return (
     <div className="navbar">
-      <a className="button" onClick={count}>Ayuda</a>
-      <a className="button" onClick={count}>Nuestras tiendas</a>
-      <a className="button" onClick={count}>Contacto</a>
+      <a className="button" onClick={handleChange}>Ayuda</a>
+      <a className="button" onClick={handleChange}>Nuestras tiendas</a>
+      <a className="button" onClick={handleChange}>Contacto</a>
     </div>
   )
 };

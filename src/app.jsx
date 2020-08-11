@@ -9,6 +9,22 @@ import Footer from './components/footer.jsx';
 class App extends Component {
   constructor(props) {
     super(props);
+
+    this.handleChange = () => {
+      const element = document.getElementsByClassName('button');
+
+      if (element[0].className === 'button') {
+        for (let i = 0; i < element.length; i++) {
+          element[i].classList.add('changecolor')
+        }
+      } else {
+        for (let i = 0; i < element.length; i++) {
+          element[i].classList.remove('changecolor')
+        }
+      }
+      alert('Hola')
+    };
+
     this.state = {
       data: [
         {
@@ -85,15 +101,16 @@ class App extends Component {
         },
       ],
       count: 0,
-    };
+      f: this.handleChange,
+    }
   };
 
   render() {
     return (
       <Fragment>
-        <Header />
+        <Header props={this.state} />
         <Hero />
-        <Menu />
+        <Menu props={this.state} />
         <Featured props={this.state} />
         <BestSeller props={this.state} />
         <Footer />
